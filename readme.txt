@@ -1,6 +1,6 @@
 === Chat ===
 
-Contributors: DerN3rd, Quauknife
+Contributors: DerN3rd, Ququknife
 
 Tags: chat, twitter, facebook, google, shortcode, BuddyPress, widget, chat widget, buddypress group, buddypress friend
 
