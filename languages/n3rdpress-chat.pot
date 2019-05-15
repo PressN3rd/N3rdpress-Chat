@@ -1,5 +1,5 @@
-# Copyright (C) 2016 WordPress Chat
-# This file is distributed under the same license as the WordPress Chat package.
+# Copyright (C) 2019 N3rdPress Chat
+# This file is distributed under the same license as the N3rdPress Chat package.
 msgid ""
 msgstr ""
 "Project-Id-Version: N3rdPress Chat 1.0.\n"
@@ -142,842 +142,842 @@ msgid "Chat Einstellungen Allgemein"
 msgstr ""
 
 #: lib/n3rdpress_chat_admin_panels.php:375
-msgid "The following settings are used for all chat session types (Page, Site, Private, Support)."
+msgid "Die folgenden Einstellungen werden für alle Chat-Sitzungstypen verwendet (Seite, Site, Privat, Support)."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:381
-msgid "Poll Intervals"
+#: lib/n3rdpress_chat_admin_panels.php:381
+msgid "Abfrageintervalle"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:384 lib/wpmudev_chat_form_sections.php:557
-#: lib/wpmudev_chat_form_sections.php:1616
-msgid "Google+"
+#: lib/n3rdpress_chat_admin_panels.php:384 lib/n3rdpress_chat_form_sections.php:557
+#: lib/n3rdpress_chat_form_sections.php:1616
+msgid "Google"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:386 lib/wpmudev_chat_form_sections.php:565
-#: lib/wpmudev_chat_form_sections.php:1571
+#: lib/n3rdpress_chat_admin_panels.php:386 lib/n3rdpress_chat_form_sections.php:565
+#: lib/n3rdpress_chat_form_sections.php:1571
 msgid "Facebook"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:388 lib/wpmudev_chat_form_sections.php:549
-#: lib/wpmudev_chat_form_sections.php:1373
+#: lib/n3rdpress_chat_admin_panels.php:388 lib/n3rdpress_chat_form_sections.php:549
+#: lib/n3rdpress_chat_form_sections.php:1373
 msgid "Twitter"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:391
-msgid "Block IP/User"
+#: lib/n3rdpress_chat_admin_panels.php:391
+msgid "Block IP/Benutzer"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:394
-#: lib/wpmudev_chat_form_sections.php:1682
-msgid "Blocked Words"
+#: lib/n3rdpress_chat_admin_panels.php:394
+#: lib/n3rdpress_chat_form_sections.php:1682
+msgid "Geblockte Wörter"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:396
-msgid "Blocked URLs"
+#: lib/n3rdpress_chat_admin_panels.php:396
+msgid "Geblockte URLs"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:398
+#: lib/n3rdpress_chat_admin_panels.php:398
 msgid "WPAdmin"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:401
+#: lib/n3rdpress_chat_admin_panels.php:401
 msgid "BuddyPress"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:440
-msgid "This section control how Chat works within the BuddyPress system. These are global settings and effect all Groups"
+#: lib/n3rdpress_chat_admin_panels.php:440
+msgid "In diesem Abschnitt wird gesteuert, wie der Chat im BuddyPress-System funktioniert. Dies sind globale Einstellungen und wirken sich auf alle Gruppen aus."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:475
-msgctxt "Page Title"
-msgid "Chat Session"
+#: lib/n3rdpress_chat_admin_panels.php:475
+msgctxt "Seiten Titel"
+msgid "Chat Sitzung"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:478 lib/wpmudev_chat_admin_panels.php:519
-msgid "Return to Logs"
+#: lib/n3rdpress_chat_admin_panels.php:478 lib/n3rdpress_chat_admin_panels.php:519
+msgid "Zurück zu den Logs"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:516
-msgctxt "Page Title"
-msgid "Chat Session Messages"
+#: lib/n3rdpress_chat_admin_panels.php:516
+msgctxt "Seiten Titel"
+msgid "Chat Sitzung Nachrichten"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:529
+#: lib/n3rdpress_chat_admin_panels.php:529
 msgid "This entire Chat Session is marked as hidden. It will not be show on public logs display. You may still hide/unhide or delete individual messages below."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:547
-msgid "Search Messages"
+#: lib/n3rdpress_chat_admin_panels.php:547
+msgid "Nachrichten suchen"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:557
-msgctxt "Page Title"
+#: lib/n3rdpress_chat_admin_panels.php:557
+msgctxt "Seiten Titel"
 msgid "Chat Session Logs"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:567
-msgid "Search Logs"
+#: lib/n3rdpress_chat_admin_panels.php:567
+msgid "Suche Logs"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:584
-msgid "Chat Settings Network Site"
+#: lib/n3rdpress_chat_admin_panels.php:584
+msgid "Chat Einstellungen Netzwerk Seite"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:588
+#: lib/n3rdpress_chat_admin_panels.php:588
 msgid "The following settings are used to control the bottom corner for all sites within the Multisite environment. This bottom corner chat is global, meaning messages are the same across all sites within the Multisite Network URLs. Once enabled this Network bottom corner chat box will <strong>replace</strong> the Site bottom corner chat box."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:666
+#: lib/n3rdpress_chat_admin_panels.php:666
 msgid "Chat Settings Network Dashboard Widgets"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:668
+#: lib/n3rdpress_chat_admin_panels.php:668
 msgid "Chat Settings Dashboard Widgets"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:673
+#: lib/n3rdpress_chat_admin_panels.php:673
 msgid "This section controls visibiliy of Network Dashboard Chat Widgets"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:675
+#: lib/n3rdpress_chat_admin_panels.php:675
 msgid "This section controls visibiliy Dashboard Chat Widgets"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:680
+#: lib/n3rdpress_chat_admin_panels.php:680
 msgid "Widgets"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:11
+#: lib/n3rdpress_chat_admin_panels_help.php:11
 msgid "This is the page overview"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:14
+#: lib/n3rdpress_chat_admin_panels_help.php:14
 msgid "Page Settings Overview"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:19
+#: lib/n3rdpress_chat_admin_panels_help.php:19
 msgid "This is the site overview"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:22
-#: lib/wpmudev_chat_admin_panels_help.php:30
-#: lib/wpmudev_chat_admin_panels_help.php:38
-#: lib/wpmudev_chat_admin_panels_help.php:46
+#: lib/n3rdpress_chat_admin_panels_help.php:22
+#: lib/n3rdpress_chat_admin_panels_help.php:30
+#: lib/n3rdpress_chat_admin_panels_help.php:38
+#: lib/n3rdpress_chat_admin_panels_help.php:46
 msgid "Site Settings Overview"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:27
+#: lib/n3rdpress_chat_admin_panels_help.php:27
 msgid "This is the widget overview"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:35
+#: lib/n3rdpress_chat_admin_panels_help.php:35
 msgid "This is the global overview"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:43
+#: lib/n3rdpress_chat_admin_panels_help.php:43
 msgid "This is the session logs overview"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:60
+#: lib/n3rdpress_chat_admin_panels_help.php:60
 msgid "If enabled will allow chat messages to be archived at the end of the chat session."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:64
+#: lib/n3rdpress_chat_admin_panels_help.php:64
 msgid "If enabled will show a list of logs for past chat session below the chat box."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:68
+#: lib/n3rdpress_chat_admin_panels_help.php:68
 msgid "Label text show above the Chat archive listing."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:71
+#: lib/n3rdpress_chat_admin_panels_help.php:71
 msgid "Maximum number of archive sessions to show in the listing."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:72
+#: lib/n3rdpress_chat_admin_panels_help.php:72
 msgid "Ex. 1, , 25, 100, empty for all."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:75
+#: lib/n3rdpress_chat_admin_panels_help.php:75
 msgid "Show/Hide the main chat session when viewing the Chat archive listing."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:79
+#: lib/n3rdpress_chat_admin_panels_help.php:79
 msgid "Select the lowest level user roles allowed to see the chat log archives. Setting to 'public' will display logs to all users.<br /><br />Compares WordPress User Role Levels (level_10, level_7, level_0, etc.)"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:83
+#: lib/n3rdpress_chat_admin_panels_help.php:83
 msgid "Select the lowest level BuddyPress group roles allowed to see the chat log archives."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:87
+#: lib/n3rdpress_chat_admin_panels_help.php:87
 msgid "When a user first enters chat they will see only the last number of messages. As new message are added older messages are remove from the message listing. This option does not purge the database."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:91
+#: lib/n3rdpress_chat_admin_panels_help.php:91
 msgid "If you host a chat spanning many hours this option will help purge the older message to prevent server load"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:95
+#: lib/n3rdpress_chat_admin_panels_help.php:95
 msgid "This is message shown to users when the chat session has been closed by the moderator."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:99
+#: lib/n3rdpress_chat_admin_panels_help.php:99
 msgid "This message is briefly displayed when the moderator archives or clears the current session messages."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:107
+#: lib/n3rdpress_chat_admin_panels_help.php:107
 msgid "Horizontal position of site and private chat boxed"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:112
+#: lib/n3rdpress_chat_admin_panels_help.php:112
 msgid "Vertical position of site and private chat boxed."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:118
+#: lib/n3rdpress_chat_admin_panels_help.php:118
 msgid "This settings controls the fixed positioning of the bottom corner chat box.<br />The bottom corner is normally fixed position. When viewing under mobile the position is changed to relative."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:124
+#: lib/n3rdpress_chat_admin_panels_help.php:124
 msgid "Pixels vertical offset from left/right edge of browsers"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:125
-#: lib/wpmudev_chat_admin_panels_help.php:131
-#: lib/wpmudev_chat_admin_panels_help.php:153
-#: lib/wpmudev_chat_admin_panels_help.php:159
-#: lib/wpmudev_chat_admin_panels_help.php:165
-#: lib/wpmudev_chat_admin_panels_help.php:171
+#: lib/n3rdpress_chat_admin_panels_help.php:125
+#: lib/n3rdpress_chat_admin_panels_help.php:131
+#: lib/n3rdpress_chat_admin_panels_help.php:153
+#: lib/n3rdpress_chat_admin_panels_help.php:159
+#: lib/n3rdpress_chat_admin_panels_help.php:165
+#: lib/n3rdpress_chat_admin_panels_help.php:171
 msgid "Ex. 3px, 10px, etc."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:130
+#: lib/n3rdpress_chat_admin_panels_help.php:130
 msgid "Pixels vertical offset from top/bottom edge of browsers."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:135
-#: lib/wpmudev_chat_admin_panels_help.php:136
+#: lib/n3rdpress_chat_admin_panels_help.php:135
+#: lib/n3rdpress_chat_admin_panels_help.php:136
 msgid "Pixels spacing between boxes."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:137
+#: lib/n3rdpress_chat_admin_panels_help.php:137
 msgid "Pixels spacing between boxes. Ex. 3px, 10px, etc. "
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:146
+#: lib/n3rdpress_chat_admin_panels_help.php:146
 msgid "Enable dropshadow on Bottom Corner and Private chat boxes "
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:151
+#: lib/n3rdpress_chat_admin_panels_help.php:151
 msgid "The position of the vertical shadow. Negative values are allowed"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:157
+#: lib/n3rdpress_chat_admin_panels_help.php:157
 msgid "The position of the horizontal shadow. Negative values are allowed"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:163
+#: lib/n3rdpress_chat_admin_panels_help.php:163
 msgid "Controls how sharp/soft the shadow edge is. The blur distance"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:169
+#: lib/n3rdpress_chat_admin_panels_help.php:169
 msgid "The size of shadow"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:175
+#: lib/n3rdpress_chat_admin_panels_help.php:175
 msgid "Starting color for dropshadow"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:181
+#: lib/n3rdpress_chat_admin_panels_help.php:181
 msgid "The title of the chat session. Will be displayed in the header bar. This is different than the post/page title."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:183
+#: lib/n3rdpress_chat_admin_panels_help.php:183
 msgid "The title of the chat session"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:187
+#: lib/n3rdpress_chat_admin_panels_help.php:187
 msgid "This sets the width of the chat box. For Page/Post chat set this to 100% to use the full width of the content area. For Site chats set this to a specific value like 300px.<br />The Adjust for Mobile dropdown controls how the chat width is handled when the screen it narrower than the chat box."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:189
+#: lib/n3rdpress_chat_admin_panels_help.php:189
 msgid "Width of chat box"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:193
+#: lib/n3rdpress_chat_admin_panels_help.php:193
 msgid "This sets the height of the chat box. This should be a specific value like 300px.<br />The Adjust for Mobile dropdown controls how the chat height is handled when the screen it shorter than the chat box."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:194
+#: lib/n3rdpress_chat_admin_panels_help.php:194
 msgid "Height of chat box"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:198
-#: lib/wpmudev_chat_admin_panels_help.php:278
-#: lib/wpmudev_chat_admin_panels_help.php:332
+#: lib/n3rdpress_chat_admin_panels_help.php:198
+#: lib/n3rdpress_chat_admin_panels_help.php:278
+#: lib/n3rdpress_chat_admin_panels_help.php:332
 msgid "Font family used for the message input. Select 'inherit' to use default page front from your theme"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:202
-#: lib/wpmudev_chat_admin_panels_help.php:282
-#: lib/wpmudev_chat_admin_panels_help.php:336
+#: lib/n3rdpress_chat_admin_panels_help.php:202
+#: lib/n3rdpress_chat_admin_panels_help.php:282
+#: lib/n3rdpress_chat_admin_panels_help.php:336
 msgid "Font size used for the message input."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:203
-#: lib/wpmudev_chat_admin_panels_help.php:283
-#: lib/wpmudev_chat_admin_panels_help.php:337
-#: lib/wpmudev_chat_admin_panels_help.php:500
-#: lib/wpmudev_chat_admin_panels_help.php:522
+#: lib/n3rdpress_chat_admin_panels_help.php:203
+#: lib/n3rdpress_chat_admin_panels_help.php:283
+#: lib/n3rdpress_chat_admin_panels_help.php:337
+#: lib/n3rdpress_chat_admin_panels_help.php:500
+#: lib/n3rdpress_chat_admin_panels_help.php:522
 msgid "12px, 0.9em or leave blank to inherit from theme"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:207
+#: lib/n3rdpress_chat_admin_panels_help.php:207
 msgid "Color of text within the chat box. This is not the same as the message row text color"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:211
+#: lib/n3rdpress_chat_admin_panels_help.php:211
 msgid "Background color of chat box area. This is not the message area color."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:215
+#: lib/n3rdpress_chat_admin_panels_help.php:215
 msgid "Border color for chat elements like Message area, User List, etc. "
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:219
+#: lib/n3rdpress_chat_admin_panels_help.php:219
 msgid "Border width for outer chat box."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:220
+#: lib/n3rdpress_chat_admin_panels_help.php:220
 msgid "Border width 1px, 3px, etc."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:224
+#: lib/n3rdpress_chat_admin_panels_help.php:224
 msgid "The spacing between the outer container border and the chat elements like message list, message area, etc."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:225
+#: lib/n3rdpress_chat_admin_panels_help.php:225
 msgid "Padding 1px, 3px, etc."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:229
+#: lib/n3rdpress_chat_admin_panels_help.php:229
 msgid "Enables sound to play when a new message is received. Users can turn this off/on."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:233
+#: lib/n3rdpress_chat_admin_panels_help.php:233
 msgid "Enables ability for users to popout the chat session into a new window."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:236
+#: lib/n3rdpress_chat_admin_panels_help.php:236
 msgid "Enables visibility of moderator footer options shown on each chat message."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:241
+#: lib/n3rdpress_chat_admin_panels_help.php:241
 msgid "Display emoticons in chat session."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:245
+#: lib/n3rdpress_chat_admin_panels_help.php:245
 msgid "Text color for elements of the outer chat box."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:249
+#: lib/n3rdpress_chat_admin_panels_help.php:249
 msgid "Display Button bar above message entry"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:253
+#: lib/n3rdpress_chat_admin_panels_help.php:253
 msgid "Background color of the message area"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:257
+#: lib/n3rdpress_chat_admin_panels_help.php:257
 msgid "Background color of the message row items"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:261
+#: lib/n3rdpress_chat_admin_panels_help.php:261
 msgid "Spacing between row items"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:265
+#: lib/n3rdpress_chat_admin_panels_help.php:265
 msgid "Border color of the message row items. Top and Bottom borders only."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:269
+#: lib/n3rdpress_chat_admin_panels_help.php:269
 msgid "Border width of the message row items"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:273
+#: lib/n3rdpress_chat_admin_panels_help.php:273
 msgid "Chat box background color when there is a new message"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:287
+#: lib/n3rdpress_chat_admin_panels_help.php:287
 msgid "Chat message row text color"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:291
+#: lib/n3rdpress_chat_admin_panels_help.php:291
 msgid "Display the user's avatar with the message"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:295
+#: lib/n3rdpress_chat_admin_panels_help.php:295
 msgid "User name background color"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:299
+#: lib/n3rdpress_chat_admin_panels_help.php:299
 msgid "Moderator Name background color"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:303
+#: lib/n3rdpress_chat_admin_panels_help.php:303
 msgid "The Avatar is a square graphic and represents the user. Enter a value for the maximum width/height of the graphic"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:308
+#: lib/n3rdpress_chat_admin_panels_help.php:308
 msgid "Display date the or messages"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:312
+#: lib/n3rdpress_chat_admin_panels_help.php:312
 msgid "Display the date the message was sent"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:316
+#: lib/n3rdpress_chat_admin_panels_help.php:316
 msgid "Date/Time color"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:320
+#: lib/n3rdpress_chat_admin_panels_help.php:320
 msgid "Date/Time background color"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:324
+#: lib/n3rdpress_chat_admin_panels_help.php:324
 msgid "Text color for source code"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:328
+#: lib/n3rdpress_chat_admin_panels_help.php:328
 msgid "Controls position of the chat message input. When set to top the chat message history is ordered newest at top. When set to bottom the chat message history is ordered newest at bottom"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:341
+#: lib/n3rdpress_chat_admin_panels_help.php:341
 msgid "Height of the message input area"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:346
+#: lib/n3rdpress_chat_admin_panels_help.php:346
 msgid "Control the height of the textarea input. Allow users to resize the input or lock it to prevent resizing. Note the textarea will always be 100% of the chat box width.<br /><br />This option is not support by all modern browsers."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:351
+#: lib/n3rdpress_chat_admin_panels_help.php:351
 msgid "Maximum number of character a user can enter. Leave blank for no limit."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:356
+#: lib/n3rdpress_chat_admin_panels_help.php:356
 msgid "Text color for message input"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:360
+#: lib/n3rdpress_chat_admin_panels_help.php:360
 msgid "Background color for message input area"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:365
+#: lib/n3rdpress_chat_admin_panels_help.php:365
 msgid "Display a send button for submitting chat messages."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:368
+#: lib/n3rdpress_chat_admin_panels_help.php:368
 msgid "Controls display position of send button."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:373
+#: lib/n3rdpress_chat_admin_panels_help.php:373
 msgid "Controls how often (seconds) to check for new message from other chat participants. Value can be partial seconds like 1.5, 2.75. etc."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:374
+#: lib/n3rdpress_chat_admin_panels_help.php:374
 msgid "1, 2, 1.5, etc. "
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:378
+#: lib/n3rdpress_chat_admin_panels_help.php:378
 msgid "Controls how often (seconds) to update the Users Lists for the chat session"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:382
+#: lib/n3rdpress_chat_admin_panels_help.php:382
 msgid "Controls the polling source of for new message and status changes"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:386
+#: lib/n3rdpress_chat_admin_panels_help.php:386
 msgid "Location for static polling files."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:390
+#: lib/n3rdpress_chat_admin_panels_help.php:390
 msgid "Enable blocked word filtering."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:394
+#: lib/n3rdpress_chat_admin_panels_help.php:394
 msgid "Replaces blocked word with the something else."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:398
+#: lib/n3rdpress_chat_admin_panels_help.php:398
 msgid "Blocked works not allowed in chat sessions. This is global to all sessions."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:402
+#: lib/n3rdpress_chat_admin_panels_help.php:402
 msgid "Blocked used banned from all chat sessions. This option will hide all chat from certain user email addresses."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:411
+#: lib/n3rdpress_chat_admin_panels_help.php:411
 msgid "This option will hide the Bottom Corner chat based on the URLs provided."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:419
+#: lib/n3rdpress_chat_admin_panels_help.php:419
 msgid "Message displayed to user when their IP address has been banned."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:423
+#: lib/n3rdpress_chat_admin_panels_help.php:423
 msgid "List of blocked IP addresses. Each IP address should be entered as dotted decimal format. Example: 123.123.123.123, 10.0.1.168"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:431
+#: lib/n3rdpress_chat_admin_panels_help.php:431
 msgid "The Bottom Corner chat is a global group chat box shown on ALL pages of your site."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:434
+#: lib/n3rdpress_chat_admin_panels_help.php:434
 msgid "Controls the initial state of the Bottom Corner chat for new users."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:437
+#: lib/n3rdpress_chat_admin_panels_help.php:437
 msgid "When the bottom cornet chat is minimized controls if server is still polled for new messages."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:440
+#: lib/n3rdpress_chat_admin_panels_help.php:440
 msgid "Display bottom corner chat within WPAdmin."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:444
+#: lib/n3rdpress_chat_admin_panels_help.php:444
 msgid "When a user exits a private chat other users who are still connected can post a message to resume the chat conversation. This option controls if the user who left the conversation will see the chat popup reappear."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:449
+#: lib/n3rdpress_chat_admin_panels_help.php:449
 msgid "Controls position of participating users in chat session"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:453
+#: lib/n3rdpress_chat_admin_panels_help.php:453
 msgid "Show list of users participating in chat session."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:457
+#: lib/n3rdpress_chat_admin_panels_help.php:457
 msgid "Show list moderators and users in separate lists or combined.<br /><br />When using Split and Above/Below the moderators will be to the left and users to the right. When using Split and Left/Right moderators will show first then users on a new line."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:462
+#: lib/n3rdpress_chat_admin_panels_help.php:462
 msgid "Width/Height of user list area. Than can be a fixed size 250px or percentage 25%. The user list area will be set to auto-scroll (CSS: overflow) when needed to show all users."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:463
+#: lib/n3rdpress_chat_admin_panels_help.php:463
 msgid "Message area width will be adjusted automatically"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:467
+#: lib/n3rdpress_chat_admin_panels_help.php:467
 msgid "Size of user avatars shown in user list area."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:468
+#: lib/n3rdpress_chat_admin_panels_help.php:468
 msgid "30px, 40px, etc. Must be a fixed size. "
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:472
+#: lib/n3rdpress_chat_admin_panels_help.php:472
 msgid "When a user leaves the chat by navigating to a different page on the site or closing the browser they will be removed after this threshold of seconds. Minimum 20 seconds."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:473
+#: lib/n3rdpress_chat_admin_panels_help.php:473
 msgid "Seconds delay when the user is remove from the listing. Minimum 20 seconds."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:478
+#: lib/n3rdpress_chat_admin_panels_help.php:478
 msgid "Background color of users list area."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:489
+#: lib/n3rdpress_chat_admin_panels_help.php:489
 msgid "Color of the Users List Header. Not used is displaying avatars."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:494
+#: lib/n3rdpress_chat_admin_panels_help.php:494
 msgid "Font family for the user name list items."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:499
+#: lib/n3rdpress_chat_admin_panels_help.php:499
 msgid "Font size for the user name list items."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:504
+#: lib/n3rdpress_chat_admin_panels_help.php:504
 msgid "Color for header text shown above user Avatars/Names."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:508
+#: lib/n3rdpress_chat_admin_panels_help.php:508
 msgid "Header show above the users lists. Leave blank to not show header. "
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:512
+#: lib/n3rdpress_chat_admin_panels_help.php:512
 msgid "Color for Moderator names in Users List."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:515
+#: lib/n3rdpress_chat_admin_panels_help.php:515
 msgid "Color for User names in Users List."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:518
+#: lib/n3rdpress_chat_admin_panels_help.php:518
 msgid "Font family for Moderator/User names in Users List."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:521
+#: lib/n3rdpress_chat_admin_panels_help.php:521
 msgid "Font size for Moderator/User names in Users List."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:526
+#: lib/n3rdpress_chat_admin_panels_help.php:526
 msgid "Border width for Moderator/User Avatars in Users List."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:529
+#: lib/n3rdpress_chat_admin_panels_help.php:529
 msgid "Border color for Moderator Avatars in Users List."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:533
+#: lib/n3rdpress_chat_admin_panels_help.php:533
 msgid "Border color for User Avatars in Users List."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:538
+#: lib/n3rdpress_chat_admin_panels_help.php:538
 msgid "Shows a brief message when a user enters/exits the chat session"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:542
+#: lib/n3rdpress_chat_admin_panels_help.php:542
 msgid "Controls the length of time the notice is shown onscreen when a user enters/exits from chat."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:547
+#: lib/n3rdpress_chat_admin_panels_help.php:547
 msgid "Which user login options are allowed for the chat sessions"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:551
+#: lib/n3rdpress_chat_admin_panels_help.php:551
 msgid "Controls what the user is allowed to see if they have not logged into chat."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:555
+#: lib/n3rdpress_chat_admin_panels_help.php:555
 msgid "This is the prompt message telling the user they need to login prior to posting chat messages."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:559
+#: lib/n3rdpress_chat_admin_panels_help.php:559
 msgid "The login message shown above the login form. "
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:563
+#: lib/n3rdpress_chat_admin_panels_help.php:563
 msgid "Controls which users can moderator message and other users during the chat session."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:567
+#: lib/n3rdpress_chat_admin_panels_help.php:567
 msgid "Controls which WordPress user roles will see the Chat WYSIWYG toolbar button."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:571
+#: lib/n3rdpress_chat_admin_panels_help.php:571
 msgid "Controls which post types will have the Chat WYSIWYG toolbar button enabled"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:575
+#: lib/n3rdpress_chat_admin_panels_help.php:575
 msgid "Allows blocking Chat from loading on certain WordPress Admin pages."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:579
+#: lib/n3rdpress_chat_admin_panels_help.php:579
 msgid "Hide/Show the widget on Posts/Pages containing the Chat shortcode."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:583
+#: lib/n3rdpress_chat_admin_panels_help.php:583
 msgid "The title of the tab within the BuddyPress group section to access Chat"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:587
+#: lib/n3rdpress_chat_admin_panels_help.php:587
 msgid "The URL slug shown to the user when accessing the Group Chat page."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:591
+#: lib/n3rdpress_chat_admin_panels_help.php:591
 msgid "Controls display of bottom corner chats on the BuddyPress Group section"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:595
+#: lib/n3rdpress_chat_admin_panels_help.php:595
 msgid "Controls display of bottom corner chats on the BuddyPress Group Admin section"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:599
+#: lib/n3rdpress_chat_admin_panels_help.php:599
 msgid "Controls display of widget chats on the BuddyPress Group section"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:603
+#: lib/n3rdpress_chat_admin_panels_help.php:603
 msgid "Controls display of bottom widget on the BuddyPress Group Admin section"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:607
+#: lib/n3rdpress_chat_admin_panels_help.php:607
 msgid "Controls the background color on BuddyPress Group Admin Chat form."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:611
+#: lib/n3rdpress_chat_admin_panels_help.php:611
 msgid "Controls the txt color for labels on the BuddyPress Group Admin Chat form."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:616
+#: lib/n3rdpress_chat_admin_panels_help.php:616
 msgid "The global bottom corner chat means the chat message will be from all sites within the Multisite system. Switching between sites will retain the messages."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:620
-#: lib/wpmudev_chat_buddypress.php:202
+#: lib/n3rdpress_chat_admin_panels_help.php:620
+#: lib/n3rdpress_chat_buddypress.php:202
 msgid "This user option controls your public chat status to other users within your network. This lets you control when others can initiate private chat sessions with you. Note this does not prevent private chats during existing chat sessions you are participating in."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels_help.php:627
-#: lib/wpmudev_chat_form_sections.php:2760
+#: lib/n3rdpress_chat_admin_panels_help.php:627
+#: lib/n3rdpress_chat_form_sections.php:2760
 msgid "This will disable all Chat functions including WordPress toolbar menu"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:35
-#: lib/wpmudev_chat_admin_session_messages.php:43
-#: lib/wpmudev_chat_form_sections.php:69
+#: lib/n3rdpress_chat_admin_session_logs.php:35
+#: lib/n3rdpress_chat_admin_session_messages.php:43
+#: lib/n3rdpress_chat_form_sections.php:69
 msgid "Hide"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:36
-#: lib/wpmudev_chat_admin_session_messages.php:44
+#: lib/n3rdpress_chat_admin_session_logs.php:36
+#: lib/n3rdpress_chat_admin_session_messages.php:44
 msgid "Unhide"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:37
-#: lib/wpmudev_chat_admin_session_messages.php:48
+#: lib/n3rdpress_chat_admin_session_logs.php:37
+#: lib/n3rdpress_chat_admin_session_messages.php:48
 msgid "Delete"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:139
-#: lib/wpmudev_chat_admin_session_messages.php:172
+#: lib/n3rdpress_chat_admin_session_logs.php:139
+#: lib/n3rdpress_chat_admin_session_messages.php:172
 msgid "Show All Status"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:143
-#: lib/wpmudev_chat_admin_session_logs.php:334
-#: lib/wpmudev_chat_admin_session_messages.php:390
+#: lib/n3rdpress_chat_admin_session_logs.php:143
+#: lib/n3rdpress_chat_admin_session_logs.php:334
+#: lib/n3rdpress_chat_admin_session_messages.php:390
 msgid "Open"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:147
-#: lib/wpmudev_chat_admin_session_logs.php:331
-#: lib/wpmudev_chat_admin_session_messages.php:176
-#: lib/wpmudev_chat_admin_session_messages.php:387
+#: lib/n3rdpress_chat_admin_session_logs.php:147
+#: lib/n3rdpress_chat_admin_session_logs.php:331
+#: lib/n3rdpress_chat_admin_session_messages.php:176
+#: lib/n3rdpress_chat_admin_session_messages.php:387
 msgid "Archived"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:151
-#: lib/wpmudev_chat_admin_session_logs.php:329
-#: lib/wpmudev_chat_admin_session_messages.php:180
-#: lib/wpmudev_chat_admin_session_messages.php:385
+#: lib/n3rdpress_chat_admin_session_logs.php:151
+#: lib/n3rdpress_chat_admin_session_logs.php:329
+#: lib/n3rdpress_chat_admin_session_messages.php:180
+#: lib/n3rdpress_chat_admin_session_messages.php:385
 msgid "Hidden"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:177
+#: lib/n3rdpress_chat_admin_session_logs.php:177
 msgid "Show All Chats"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:209
+#: lib/n3rdpress_chat_admin_session_logs.php:209
 msgid "Show All Types"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:231
+#: lib/n3rdpress_chat_admin_session_logs.php:231
 msgid "Start Date"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:233
+#: lib/n3rdpress_chat_admin_session_logs.php:233
 msgid "End Date"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:296
-#: lib/wpmudev_chat_admin_session_messages.php:291
+#: lib/n3rdpress_chat_admin_session_logs.php:296
+#: lib/n3rdpress_chat_admin_session_messages.php:291
 msgid "Time"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:301
+#: lib/n3rdpress_chat_admin_session_logs.php:301
 msgid "Session"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:302
-#: lib/wpmudev_chat_admin_session_messages.php:292
-#: lib/wpmudev_chat_wpadminbar.php:119
+#: lib/n3rdpress_chat_admin_session_logs.php:302
+#: lib/n3rdpress_chat_admin_session_messages.php:292
+#: lib/n3rdpress_chat_wpadminbar.php:119
 msgid "Status"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:303
+#: lib/n3rdpress_chat_admin_session_logs.php:303
 msgid "Type"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:304
+#: lib/n3rdpress_chat_admin_session_logs.php:304
 msgid "Moderators"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:305
+#: lib/n3rdpress_chat_admin_session_logs.php:305
 msgid "Users"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:306
+#: lib/n3rdpress_chat_admin_session_logs.php:306
 msgid "Messages"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:315 wordpress-chat.php:3181
+#: lib/n3rdpress_chat_admin_session_logs.php:315 n3rdpress-chat.php:3181
 msgid "Private"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:343
-#: lib/wpmudev_chat_buddypress.php:127 lib/wpmudev_chat_widget.php:832
-#: lib/wpmudev_chat_widget.php:862 lib/wpmudev_chat_wpadminbar.php:111
-#: lib/wpmudev_chat_wpadminbar.php:145 wordpress-chat.php:1007
+#: lib/n3rdpress_chat_admin_session_logs.php:343
+#: lib/n3rdpress_chat_buddypress.php:127 lib/n3rdpress_chat_widget.php:832
+#: lib/n3rdpress_chat_widget.php:862 lib/n3rdpress_chat_wpadminbar.php:111
+#: lib/n3rdpress_chat_wpadminbar.php:145 n3rdpress-chat.php:1007
 msgid "Chat"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:388
+#: lib/n3rdpress_chat_admin_session_logs.php:388
 msgid "details"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:389
+#: lib/n3rdpress_chat_admin_session_logs.php:389
 msgid "Show details for this chat session"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:403
-#: lib/wpmudev_chat_admin_session_messages.php:334 wordpress-chat.php:1181
-#: wordpress-chat.php:4876
+#: lib/n3rdpress_chat_admin_session_logs.php:403
+#: lib/n3rdpress_chat_admin_session_messages.php:334 n3rdpress-chat.php:1181
+#: n3rdpress-chat.php:4876
 msgid "hide"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:404
+#: lib/n3rdpress_chat_admin_session_logs.php:404
 msgid "Hide entire chat session blocking public view"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:410
-#: lib/wpmudev_chat_admin_session_messages.php:341 wordpress-chat.php:1182
-#: wordpress-chat.php:4877
+#: lib/n3rdpress_chat_admin_session_logs.php:410
+#: lib/n3rdpress_chat_admin_session_messages.php:341 n3rdpress-chat.php:1182
+#: n3rdpress-chat.php:4877
 msgid "unhide"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:411
+#: lib/n3rdpress_chat_admin_session_logs.php:411
 msgid "Unhide entire chat session allowing public view"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:418
-#: lib/wpmudev_chat_admin_session_messages.php:350
+#: lib/n3rdpress_chat_admin_session_logs.php:418
+#: lib/n3rdpress_chat_admin_session_messages.php:350
 msgid "delete"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:419
+#: lib/n3rdpress_chat_admin_session_logs.php:419
 msgid "Delete entire chat session permanently"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:433
+#: lib/n3rdpress_chat_admin_session_logs.php:433
 msgid "show chat"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:434
+#: lib/n3rdpress_chat_admin_session_logs.php:434
 msgid "Show live chat session"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:564
+#: lib/n3rdpress_chat_admin_session_logs.php:564
 msgid " (%s secs ago)"
 msgid_plural " (%s secs ago)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:601
+#: lib/n3rdpress_chat_admin_session_logs.php:601
 msgid "%s secs"
 msgid_plural "%s secs"
 msgstr[0] ""
@@ -985,19 +985,19 @@ msgstr[1] ""
 
 #. translators: min=minute
 
-#: lib/wpmudev_chat_admin_session_logs.php:608
+#: lib/n3rdpress_chat_admin_session_logs.php:608
 msgid "%s min"
 msgid_plural "%s mins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:614
+#: lib/n3rdpress_chat_admin_session_logs.php:614
 msgid "%s hour"
 msgid_plural "%s hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/wpmudev_chat_admin_session_logs.php:620
+#: lib/n3rdpress_chat_admin_session_logs.php:620
 msgid "%s day"
 msgid_plural "%s days"
 msgstr[0] ""
@@ -3125,10 +3125,10 @@ msgstr ""
 msgid "Provides you with a fully featured chat area either in a post, page, widget or bottom corner of your site. Support BuddyPress Group chat and private chats between logged in users."
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "WPMU DEV"
+#. Autor des Plugin/Designs
+msgid "N3rdPress Devs"
 msgstr ""
 
-#. Author URI of the plugin/theme
-msgid "http://premium.wpmudev.org"
+#. Autor URI des Plugin/Designs
+msgid "https://n3rds.work"
 msgstr ""
