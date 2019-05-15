@@ -45,104 +45,103 @@ msgid "Chat Einstellungen Seite"
 msgstr ""
 
 #: lib/n3rdpress_chat_admin_panels.php:46
-msgid "The following settings are used to control the inline chat shortcodes applied to Posts, Pages, etc. You can setup default options here. As well as override theseThe following settings are used to control the inline chat shortcodes applied to Posts, Pages, etc. You can setup default options here. As well as override these default options with shortcode parameters on the specific Post, Page, etc."
- default options with shortcode parameters on the specific Post, Page, etc."
+msgid "Die folgenden Einstellungen werden verwendet, um die Inline-Chat-Shortcodes für Posts, Pages usw. zu steuern. Hier können Sie Standardoptionen festlegen. Diese Einstellungen werden nicht nur überschrieben, sondern auch verwendet. Die folgenden Einstellungen werden verwendet, um die Inline-Chat-Kurzcodes für Posts, Pages usw. zu steuern. Hier können Sie Standardoptionen festlegen. Diese Standardoptionen können auch mit den Shortcode-Parametern für den jeweiligen Beitrag, die Seite usw. überschrieben werden."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:51 lib/wpmudev_chat_admin_panels.php:133
-#: lib/wpmudev_chat_admin_panels.php:214 lib/wpmudev_chat_admin_panels.php:290
-#: lib/wpmudev_chat_admin_panels.php:595 lib/wpmudev_chat_admin_panels.php:683
-#: lib/wpmudev_chat_admin_tinymce.php:192
-msgid "Box Appearance"
+#: lib/n3rdpress_chat_admin_panels.php:51 lib/n3rdpress_chat_admin_panels.php:133
+#: lib/n3rdpress_chat_admin_panels.php:214 lib/n3rdpress_chat_admin_panels.php:290
+#: lib/n3rdpress_chat_admin_panels.php:595 lib/n3rdpress_chat_admin_panels.php:683
+#: lib/n3rdpress_chat_admin_tinymce.php:192
+msgid "Box Aussehen"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:53 lib/wpmudev_chat_admin_panels.php:137
-#: lib/wpmudev_chat_admin_panels.php:216 lib/wpmudev_chat_admin_panels.php:292
-#: lib/wpmudev_chat_admin_panels.php:599 lib/wpmudev_chat_admin_panels.php:685
-#: lib/wpmudev_chat_admin_tinymce.php:197
-msgid "Message Appearance"
+#: lib/n3rdpress_chat_admin_panelsdev_chat_admin_panels.php:53 lib/n3rdpress_chat_admin_panels.php:137
+#: lib/n3rdpress_chat_admin_panels.php:216 lib/n3rdpress_chat_admin_panels.php:292
+#: lib/n3rdpress_chat_admin_panels.php:599 lib/n3rdpress_chat_admin_panels.php:685
+#: lib/n3rdpress_chat_admin_tinymce.php:197
+msgid "Nachrichten Darstellung"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:56 lib/wpmudev_chat_admin_panels.php:140
-#: lib/wpmudev_chat_admin_panels.php:219 lib/wpmudev_chat_admin_panels.php:295
-#: lib/wpmudev_chat_admin_panels.php:602 lib/wpmudev_chat_admin_panels.php:688
-#: lib/wpmudev_chat_admin_tinymce.php:202
-msgid "Message Input"
+#: lib/n3rdpress_chat_admin_panels.php:56 lib/n3rdpress_chat_admin_panels.php:140
+#: lib/n3rdpress_chat_admin_panels.php:219 lib/n3rdpress_chat_admin_panels.php:295
+#: lib/n3rdpress_chat_admin_panels.php:602 lib/n3rdpress_chat_admin_panels.php:688
+#: lib/n3rdpress_chat_admin_tinymce.php:202
+msgid "Nachrichten Eingabe"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:58 lib/wpmudev_chat_admin_panels.php:142
-#: lib/wpmudev_chat_admin_panels.php:221 lib/wpmudev_chat_admin_panels.php:297
-#: lib/wpmudev_chat_admin_panels.php:604 lib/wpmudev_chat_admin_panels.php:690
-#: lib/wpmudev_chat_admin_tinymce.php:207
-msgid "Users List"
+#: lib/n3rdpress_chat_admin_panels.php:58 lib/n3rdpress_chat_admin_panels.php:142
+#: lib/n3rdpress_chat_admin_panels.php:221 lib/n3rdpress_chat_admin_panels.php:297
+#: lib/n3rdpress_chat_admin_panels.php:604 lib/n3rdpress_chat_admin_panels.php:690
+#: lib/n3rdpress_chat_admin_tinymce.php:207
+msgid "Benutzer Liste"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:60 lib/wpmudev_chat_admin_panels.php:144
-#: lib/wpmudev_chat_admin_panels.php:223 lib/wpmudev_chat_admin_panels.php:606
-#: lib/wpmudev_chat_admin_panels.php:694 lib/wpmudev_chat_admin_tinymce.php:212
-msgid "Authentication"
+#: lib/n3rdpress_chat_admin_panels.php:60 lib/n3rdpress_chat_admin_panels.php:144
+#: lib/n3rdpress_chat_admin_panels.php:223 lib/n3rdpress_chat_admin_panels.php:606
+#: lib/n3rdpress_chat_admin_panels.php:694 lib/n3rdpress_chat_admin_tinymce.php:212
+msgid "Authentifizierung"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:62
+#: lib/n3rdpress_chat_admin_panels.php:62
 msgid "WYSIWYG Button"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:64 lib/wpmudev_chat_admin_panels.php:146
-#: lib/wpmudev_chat_admin_panels.php:225 lib/wpmudev_chat_admin_panels.php:299
-#: lib/wpmudev_chat_admin_panels.php:608 lib/wpmudev_chat_admin_panels.php:698
-#: lib/wpmudev_chat_admin_tinymce.php:217
-msgid "Advanced"
+#: lib/n3rdpress_chat_admin_panels.php:64 lib/n3rdpress_chat_admin_panels.php:146
+#: lib/n3rdpress_chat_admin_panels.php:225 lib/n3rdpress_chat_admin_panels.php:299
+#: lib/n3rdpress_chat_admin_panels.php:608 lib/n3rdpress_chat_admin_panels.php:698
+#: lib/n3rdpress_chat_admin_tinymce.php:217
+msgid "Erweitert"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:105 lib/wpmudev_chat_admin_panels.php:190
-#: lib/wpmudev_chat_admin_panels.php:263 lib/wpmudev_chat_admin_panels.php:452
-#: lib/wpmudev_chat_admin_panels.php:650 lib/wpmudev_chat_admin_panels.php:735
-#: lib/wpmudev_chat_buddypress.php:252
-msgid "Save Changes"
+#: lib/n3rdpress_chat_admin_panels.php:105 lib/n3rdpress_chat_admin_panels.php:190
+#: lib/n3rdpress_chat_admin_panels.php:263 lib/n3rdpress_chat_admin_panels.php:452
+#: lib/n3rdpress_chat_admin_panels.php:650 lib/n3rdpress_chat_admin_panels.php:735
+#: lib/n3rdpress_chat_buddypress.php:252
+msgid "Änderungen speichern"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:119
-msgid "Chat Settings Site"
+#: lib/n3rdpress_chat_admin_panels.php:119
+msgid "Chat Einstellungen Seite"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:123
-msgid "The following settings are used to control the bottom corner and private chat area settings."
+#: lib/n3rdpress_chat_admin_panels.php:123
+msgid "Mit den folgenden Einstellungen wird das Chat Fenster in der unteren Ecke und die private Chat Umgebung kontrolliert."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:126
-msgid "Under Multisite the bottom corner chat can be enabled at the Netowrk. When this happens it will replace the local site bottom corner chat."
+#: lib/n3rdpress_chat_admin_panels.php:126
+msgid "Unter Multisite kann der Chat in der unteren Ecke im Netzwerk aktiviert werden. Unter Multisite kann der Chat in der unteren Ecke im Netzwerk aktiviert werden. In diesem Fall wird der Chat in der unteren Ecke der lokalen Site ersetzt."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:131 lib/wpmudev_chat_admin_panels.php:593
-#: lib/wpmudev_chat_form_sections.php:2493
-msgid "Bottom Corner"
+#: lib/n3rdpress_chat_admin_panels.php:131 lib/n3rdpress_chat_admin_panels.php:593
+#: lib/n3rdpress_chat_form_sections.php:2493
+msgid "Untere Ecke"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:135 lib/wpmudev_chat_admin_panels.php:597
+#: lib/n3rdpress_chat_admin_panels.php:135 lib/n3rdpress_chat_admin_panels.php:597
 msgid "Box Position"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:205
-msgid "Chat Settings Widget"
+#: lib/n3rdpress_chat_admin_panels.php:205
+msgid "Chat Einstellungen Widget"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:209
-msgid "The following settings are used to control all Chat Widgets."
+#: lib/n3rdpress_chat_admin_panels.php:209
+msgid "Die folgenden Einstellungen kontrollieren alle Chat Widdgets."
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:276
-msgid "Group Chat Settings"
+#: lib/n3rdpress_chat_admin_panels.php:276
+msgid "Gruppen Chat Einstellungen"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:368
-msgid "Chat Settings Network Common"
+#: lib/n3rdpress_chat_admin_panels.php:368
+msgid "Chat Einstellungen Netwerk Allgemein"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:370
-msgid "Chat Settings Common"
+#: lib/n3rdpress_chat_admin_panels.php:370
+msgid "Chat Einstellungen Allgemein"
 msgstr ""
 
-#: lib/wpmudev_chat_admin_panels.php:375
+#: lib/n3rdpress_chat_admin_panels.php:375
 msgid "The following settings are used for all chat session types (Page, Site, Private, Support)."
 msgstr ""
 
