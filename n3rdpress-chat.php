@@ -32,17 +32,17 @@ Contributors: DerN3rd, Ququknife
 
 
 
-include_once( dirname( __FILE__ ) . '/lib/wpmudev_chat_utilities.php' );
+include_once( dirname( __FILE__ ) . '/lib/n3rdpress_chat_utilities.php' );
 
-include_once( dirname( __FILE__ ) . '/lib/wpmudev_chat_wpadminbar.php' );
+include_once( dirname( __FILE__ ) . '/lib/n3rdpress_chat_wpadminbar.php' );
 
 
 
-if ( ( ! defined( 'WPMUDEV_CHAT_SHORTINIT' ) ) || ( WPMUDEV_CHAT_SHORTINIT != true ) ) {
+if ( ( ! defined( 'N3RDPRESS_CHAT_SHORTINIT' ) ) || ( N3RDPRESS_CHAT_SHORTINIT != true ) ) {
 
-	include_once( dirname( __FILE__ ) . '/lib/wpmudev_chat_widget.php' );
+	include_once( dirname( __FILE__ ) . '/lib/n3rdpress_chat_widget.php' );
 
-	include_once( dirname( __FILE__ ) . '/lib/wpmudev_chat_buddypress.php' );
+	include_once( dirname( __FILE__ ) . '/lib/n3rdpress_chat_buddypress.php' );
 
 }
 
@@ -168,11 +168,11 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 			if ( is_multisite() ) {
 
-				$this->_chat_plugin_settings['options_version'] = get_site_option( 'wpmudev-chat-version', false );
+				$this->_chat_plugin_settings['options_version'] = get_site_option( 'n3rdpress-chat-version', false );
 
 			} else {
 
-				$this->_chat_plugin_settings['options_version'] = get_option( 'wpmudev-chat-version', false );
+				$this->_chat_plugin_settings['options_version'] = get_option( 'n3rdpress-chat-version', false );
 
 			}
 
@@ -180,7 +180,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 			// Short circut out. We don't need these during our SHORTINIT processing.
 
-			if ( ( defined( 'WPMUDEV_CHAT_SHORTINIT' ) ) && ( WPMUDEV_CHAT_SHORTINIT == true ) ) {
+			if ( ( defined( 'N3RDPRESS_CHAT_SHORTINIT' ) ) && ( N3RDPRESS_CHAT_SHORTINIT == true ) ) {
 
 				return;
 
@@ -188,17 +188,17 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			// Add support for new WPMUDEV Dashboard Notices
+			// Add support for new N3RDPRESS Dashboard Notices
 
 
 
-			global $wpmudev_notices;
+			global $n3rdpress_notices;
 
-			$wpmudev_notices[] = array(
+			$n3rdpress_notices[] = array(
 
 				'id'      => 159,
 
-				'name'    => 'WordPress Chat',
+				'name'    => 'N3rdPress Chat',
 
 				'screens' => array(
 
@@ -216,7 +216,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 			);
 
-			include_once( dirname( __FILE__ ) . '/lib/dash-notices/wpmudev-dash-notification.php' );
+			include_once( dirname( __FILE__ ) . '/lib/dash-notices/n3rdpress-dash-notification.php' );
 
 
 
@@ -304,7 +304,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 			// Uncomment when ready to show chat on the WP admin toolbar. Not ready 2013-01-31
 
-			add_action( 'wp_before_admin_bar_render', 'wpmudev_chat_wpadminbar_render' );
+			add_action( 'wp_before_admin_bar_render', 'n3rdpress_chat_wpadminbar_render' );
 
 
 
@@ -340,7 +340,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 			// We use a single table for all chats accross the network
 
-			return $wpdb->base_prefix . 'wpmudev_chat_' . $table;
+			return $wpdb->base_prefix . 'n3rdpress_chat_' . $table;
 
 		}
 
@@ -388,7 +388,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-					$sql_str = $wpdb->prepare( "UPDATE `" . WPMUDEV_Chat::tablename( 'log' ) . "` SET blog_id = %d WHERE blog_id = %d AND session_type != %s", 1, 0, 'network-site' );
+					$sql_str = $wpdb->prepare( "UPDATE `" . N3RDPRESS_Chat::tablename( 'log' ) . "` SET blog_id = %d WHERE blog_id = %d AND session_type != %s", 1, 0, 'network-site' );
 
 					//echo "sql_str=[". $sql_str ."]<br />";
 
@@ -396,7 +396,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-					$sql_str = $wpdb->prepare( "UPDATE `" . WPMUDEV_Chat::tablename( 'message' ) . "` SET blog_id = %d WHERE blog_id = %d AND session_type != %s", 1, 0, 'network-site' );
+					$sql_str = $wpdb->prepare( "UPDATE `" . N3RDPRESS_Chat::tablename( 'message' ) . "` SET blog_id = %d WHERE blog_id = %d AND session_type != %s", 1, 0, 'network-site' );
 
 					//echo "sql_str=[". $sql_str ."]<br />";
 
@@ -404,7 +404,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-					$sql_str = $wpdb->prepare( "UPDATE `" . WPMUDEV_Chat::tablename( 'users' ) . "` SET blog_id = %d WHERE blog_id = %d ", 1, 0 );
+					$sql_str = $wpdb->prepare( "UPDATE `" . N3RDPRESS_Chat::tablename( 'users' ) . "` SET blog_id = %d WHERE blog_id = %d ", 1, 0 );
 
 					//echo "sql_str=[". $sql_str ."]<br />";
 
@@ -414,7 +414,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 					// Need to drop the 'created column from the log table as it it not used anymore
 
-					//$sql_str = "ALTER TABLE `". WPMUDEV_Chat::tablename('log') ."` DROP COLUMN `created`";
+					//$sql_str = "ALTER TABLE `". N3RDPRESS_Chat::tablename('log') ."` DROP COLUMN `created`";
 
 					//@$wpdb->query( $sql_str );
 
@@ -482,7 +482,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 									// Update the message rows to reference the log id
 
-									$sql_str = $wpdb->prepare( "UPDATE `" . WPMUDEV_Chat::tablename( 'message' ) . "` SET log_id = %d WHERE id IN (" . implode( ',', $row_ids ) . ");",
+									$sql_str = $wpdb->prepare( "UPDATE `" . N3RDPRESS_Chat::tablename( 'message' ) . "` SET log_id = %d WHERE id IN (" . implode( ',', $row_ids ) . ");",
 
 										$log->id );
 
@@ -504,11 +504,11 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 					if ( is_multisite() ) {
 
-						update_site_option( 'wpmudev-chat-version', $this->chat_current_version );
+						update_site_option( 'n3rdpress-chat-version', $this->chat_current_version );
 
 					} else {
 
-						update_option( 'wpmudev-chat-version', $this->chat_current_version );
+						update_option( 'n3rdpress-chat-version', $this->chat_current_version );
 
 					}
 
@@ -588,7 +588,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$sql_table_message_1_3_x = "CREATE TABLE " . WPMUDEV_Chat::tablename( 'message' ) . " (
+			$sql_table_message_1_3_x = "CREATE TABLE " . N3RDPRESS_Chat::tablename( 'message' ) . " (
 
 			id BIGINT NOT NULL AUTO_INCREMENT,
 
@@ -622,7 +622,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$sql_table_log_1_3_x = "CREATE TABLE " . WPMUDEV_Chat::tablename( 'log' ) . " (
+			$sql_table_log_1_3_x = "CREATE TABLE " . N3RDPRESS_Chat::tablename( 'log' ) . " (
 
 			id BIGINT NOT NULL AUTO_INCREMENT,
 
@@ -648,7 +648,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$sql_table_message_current = "CREATE TABLE " . WPMUDEV_Chat::tablename( 'message' ) . " (
+			$sql_table_message_current = "CREATE TABLE " . N3RDPRESS_Chat::tablename( 'message' ) . " (
 
 			id bigint(20) NOT NULL AUTO_INCREMENT ,
 
@@ -700,7 +700,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$sql_table_log_current = "CREATE TABLE " . WPMUDEV_Chat::tablename( 'log' ) . " (
+			$sql_table_log_current = "CREATE TABLE " . N3RDPRESS_Chat::tablename( 'log' ) . " (
 
 			id BIGINT NOT NULL AUTO_INCREMENT,
 
@@ -734,7 +734,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$sql_table_users_current = "CREATE TABLE " . WPMUDEV_Chat::tablename( 'users' ) . " (
+			$sql_table_users_current = "CREATE TABLE " . N3RDPRESS_Chat::tablename( 'users' ) . " (
 
 		  	blog_id bigint(20) unsigned NOT NULL,
 
@@ -770,7 +770,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			if ( $wpdb->get_var( "SHOW TABLES LIKE '" . WPMUDEV_Chat::tablename( 'message' ) . "'" ) != WPMUDEV_Chat::tablename( 'message' ) ) {
+			if ( $wpdb->get_var( "SHOW TABLES LIKE '" . N3RDPRESS_Chat::tablename( 'message' ) . "'" ) != N3RDPRESS_Chat::tablename( 'message' ) ) {
 
 				// First check if we have the old Chat 1.3.x table still around.
 
@@ -786,7 +786,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 					// Now copy the rows from the old table into the new table.
 
-					$sql_str = "INSERT INTO `" . WPMUDEV_Chat::tablename( 'message' ) . "` SELECT * FROM " . $wpdb->base_prefix . "chat_message;";
+					$sql_str = "INSERT INTO `" . N3RDPRESS_Chat::tablename( 'message' ) . "` SELECT * FROM " . $wpdb->base_prefix . "chat_message;";
 
 					$wpdb->query( $sql_str );
 
@@ -818,7 +818,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			if ( $wpdb->get_var( "SHOW TABLES LIKE '" . WPMUDEV_Chat::tablename( 'log' ) . "'" ) != WPMUDEV_Chat::tablename( 'log' ) ) {
+			if ( $wpdb->get_var( "SHOW TABLES LIKE '" . N3RDPRESS_Chat::tablename( 'log' ) . "'" ) != N3RDPRESS_Chat::tablename( 'log' ) ) {
 
 				// First check if we have the old Chat 1.3.x table still around.
 
@@ -830,7 +830,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 					// Now copy the rows from the old table into the new table.
 
-					$sql_str = "INSERT INTO `" . WPMUDEV_Chat::tablename( 'log' ) . "` SELECT * FROM " . $wpdb->base_prefix . "chat_log;";
+					$sql_str = "INSERT INTO `" . N3RDPRESS_Chat::tablename( 'log' ) . "` SELECT * FROM " . $wpdb->base_prefix . "chat_log;";
 
 					$wpdb->query( $sql_str );
 
@@ -856,7 +856,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			if ( $wpdb->get_var( "SHOW TABLES LIKE '" . WPMUDEV_Chat::tablename( 'users' ) . "'" ) != WPMUDEV_Chat::tablename( 'users' ) ) {
+			if ( $wpdb->get_var( "SHOW TABLES LIKE '" . N3RDPRESS_Chat::tablename( 'users' ) . "'" ) != N3RDPRESS_Chat::tablename( 'users' ) ) {
 
 				dbDelta( $sql_table_users_current );
 
@@ -872,23 +872,23 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			add_option( 'wpmudev-chat-page', $this->_chat_options['page'] );
+			add_option( 'n3rdpress-chat-page', $this->_chat_options['page'] );
 
-			add_option( 'wpmudev-chat-site', $this->_chat_options['site'] );
+			add_option( 'n3rdpress-chat-site', $this->_chat_options['site'] );
 
-			add_option( 'wpmudev-chat-widget', $this->_chat_options['widget'] );
+			add_option( 'n3rdpress-chat-widget', $this->_chat_options['widget'] );
 
-			add_option( 'wpmudev-chat-global', $this->_chat_options['global'] );
+			add_option( 'n3rdpress-chat-global', $this->_chat_options['global'] );
 
-			add_option( 'wpmudev-chat-banned', $this->_chat_options['banned'] );
+			add_option( 'n3rdpress-chat-banned', $this->_chat_options['banned'] );
 
 
 
 			if ( ( is_multisite() ) && ( is_network_admin() ) ) {
 
-				add_site_option( 'wpmudev-chat-site', $this->_chat_options['site'] );
+				add_site_option( 'n3rdpress-chat-site', $this->_chat_options['site'] );
 
-				add_site_option( 'wpmudev-chat-widget', $this->_chat_options['widget'] );
+				add_site_option( 'n3rdpress-chat-widget', $this->_chat_options['widget'] );
 
 			}
 
@@ -950,19 +950,19 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$this->_chat_options['user-statuses'] = get_option( 'wpmudev-chat-user-statuses', array() );
+			$this->_chat_options['user-statuses'] = get_option( 'n3rdpress-chat-user-statuses', array() );
 
 			$this->_chat_options['user-statuses'] = wp_parse_args( $this->_chat_options['user-statuses'], $this->_chat_options_defaults['user-statuses'] );
 
 
 
-			if ( isset( $_POST['wpmudev-chat-sessions'] ) ) {
+			if ( isset( $_POST['n3rdpress-chat-sessions'] ) ) {
 
-				if ( ( is_array( $_POST['wpmudev-chat-sessions'] ) ) && ( count( $_POST['wpmudev-chat-sessions'] ) ) ) {
+				if ( ( is_array( $_POST['n3rdpress-chat-sessions'] ) ) && ( count( $_POST['n3rdpress-chat-sessions'] ) ) ) {
 
 
 
-					foreach ( $_POST['wpmudev-chat-sessions'] as $chat_session ) {
+					foreach ( $_POST['n3rdpress-chat-sessions'] as $chat_session ) {
 
 						$chat_id       = $chat_session['id'];
 
@@ -1014,7 +1014,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 			foreach ( $this->chat_sessions as $chat_id => $chat_session ) {
 
-				if ( ( isset( $chat_session['template'] ) ) && ( $chat_session['template'] == "wpmudev-chat-pop-out" ) ) {
+				if ( ( isset( $chat_session['template'] ) ) && ( $chat_session['template'] == "n3rdpress-chat-pop-out" ) ) {
 
 					$this->using_popup_out_template = true;
 
@@ -1024,9 +1024,9 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			if ( ! empty( $_COOKIE['wpmudev-chat-auth'] ) ) {
+			if ( ! empty( $_COOKIE['n3rdpress-chat-auth'] ) ) {
 
-				$this->chat_auth = json_decode( stripslashes( $_COOKIE['wpmudev-chat-auth'] ), true );
+				$this->chat_auth = json_decode( stripslashes( $_COOKIE['n3rdpress-chat-auth'] ), true );
 
 			} else {
 
@@ -1062,7 +1062,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-					wpmudev_chat_update_user_activity( $current_user->ID );
+					n3rdpress_chat_update_user_activity( $current_user->ID );
 
 
 
@@ -1080,7 +1080,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-					$this->user_meta = get_user_meta( $current_user->ID, 'wpmudev-chat-user', true );
+					$this->user_meta = get_user_meta( $current_user->ID, 'n3rdpress-chat-user', true );
 
 
 
@@ -1092,7 +1092,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 					// Get the user's Chat status carried as part of the user_meta information
 
-					$chat_user_status = wpmudev_chat_get_user_status( $current_user->ID );
+					$chat_user_status = n3rdpress_chat_get_user_status( $current_user->ID );
 
 					if ( isset( $this->_chat_options['user-statuses'][ $chat_user_status ] ) ) {
 
@@ -1120,7 +1120,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 					// We can only get the avatar when not in SHORTINIT mode since SHORTINIT removes all other plugin filters.
 
-					if ( ( ! defined( 'WPMUDEV_CHAT_SHORTINIT' ) ) || ( WPMUDEV_CHAT_SHORTINIT != true ) ) {
+					if ( ( ! defined( 'N3RDPRESS_CHAT_SHORTINIT' ) ) || ( N3RDPRESS_CHAT_SHORTINIT != true ) ) {
 
 
 
@@ -1174,7 +1174,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 				if ( ( isset( $this->chat_auth['type'] ) ) && ( $this->chat_auth['type'] == 'wordpress' ) ) {
 
-					if ( wpmudev_chat_is_moderator( $chat_session ) ) {
+					if ( n3rdpress_chat_is_moderator( $chat_session ) ) {
 
 						$this->chat_sessions[ $session_id ]['moderator'] = "yes";
 
@@ -1198,9 +1198,9 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 			// Grab user chat_user cookie data. The chat_user cookie contains user settings like sounds on/off or chat box maximixed/minimized.
 
-			if ( ! empty( $_COOKIE['wpmudev-chat-user'] ) ) {
+			if ( ! empty( $_COOKIE['n3rdpress-chat-user'] ) ) {
 
-				$this->chat_user = json_decode( stripslashes( $_COOKIE['wpmudev-chat-user'] ), true );
+				$this->chat_user = json_decode( stripslashes( $_COOKIE['n3rdpress-chat-user'] ), true );
 
 			}
 
@@ -1234,11 +1234,11 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 			if ( ( is_multisite() ) && ( is_network_admin() ) ) {
 
-				$this->_chat_options['global'] = get_site_option( 'wpmudev-chat-global', array() );
+				$this->_chat_options['global'] = get_site_option( 'n3rdpress-chat-global', array() );
 
 			} else {
 
-				$this->_chat_options['global'] = get_option( 'wpmudev-chat-global', array() );
+				$this->_chat_options['global'] = get_option( 'n3rdpress-chat-global', array() );
 
 			}
 
@@ -1258,7 +1258,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$this->_chat_options['page'] = get_option( 'wpmudev-chat-page', array() );
+			$this->_chat_options['page'] = get_option( 'n3rdpress-chat-page', array() );
 
 
 
@@ -1290,7 +1290,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$this->_chat_options['site'] = get_option( 'wpmudev-chat-site', array() );
+			$this->_chat_options['site'] = get_option( 'n3rdpress-chat-site', array() );
 
 			if ( empty( $this->_chat_options['site'] ) ) { // If empty see if we have an older version
 
@@ -1308,7 +1308,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$this->_chat_options['widget'] = get_option( 'wpmudev-chat-widget', array() );
+			$this->_chat_options['widget'] = get_option( 'n3rdpress-chat-widget', array() );
 
 			$this->_chat_options['widget'] = wp_parse_args( $this->_chat_options['widget'], $this->_chat_options_defaults['widget'] );
 
@@ -1316,11 +1316,11 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 			if ( is_network_admin() ) {
 
-				$this->_chat_options['dashboard'] = get_site_option( 'wpmudev-chat-dashboard', array() );
+				$this->_chat_options['dashboard'] = get_site_option( 'n3rdpress-chat-dashboard', array() );
 
 			} else {
 
-				$this->_chat_options['dashboard'] = get_option( 'wpmudev-chat-dashboard', array() );
+				$this->_chat_options['dashboard'] = get_option( 'n3rdpress-chat-dashboard', array() );
 
 			}
 
@@ -1328,7 +1328,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$this->_chat_options['bp-group'] = get_option( 'wpmudev-chat-bp-group', array() );
+			$this->_chat_options['bp-group'] = get_option( 'n3rdpress-chat-bp-group', array() );
 
 
 
@@ -1338,7 +1338,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			$this->_chat_options['banned'] = get_option( 'wpmudev-chat-banned', array() );
+			$this->_chat_options['banned'] = get_option( 'n3rdpress-chat-banned', array() );
 
 			$this->_chat_options['banned'] = wp_parse_args( $this->_chat_options['banned'], $this->_chat_options_defaults['banned'] );
 
@@ -1394,23 +1394,23 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 
 
-			if ( ( ! defined( 'WPMUDEV_CHAT_SHORTINIT' ) ) || ( WPMUDEV_CHAT_SHORTINIT != true ) ) {
+			if ( ( ! defined( 'N3RDPRESS_CHAT_SHORTINIT' ) ) || ( N3RDPRESS_CHAT_SHORTINIT != true ) ) {
 
 
 
-				$this->_chat_plugin_settings['blocked_urls']['admin'] = wpmudev_chat_check_is_blocked_urls( $this->get_option( 'blocked_admin_urls', 'global' ),
+				$this->_chat_plugin_settings['blocked_urls']['admin'] = n3rdpress_chat_check_is_blocked_urls( $this->get_option( 'blocked_admin_urls', 'global' ),
 
 					$this->get_option( 'blocked_admin_urls_action', 'global' ), false );
 
 
 
-				$this->_chat_plugin_settings['blocked_urls']['site'] = wpmudev_chat_check_is_blocked_urls( $this->get_option( 'blocked_urls', 'site' ),
+				$this->_chat_plugin_settings['blocked_urls']['site'] = n3rdpress_chat_check_is_blocked_urls( $this->get_option( 'blocked_urls', 'site' ),
 
 					$this->get_option( 'blocked_urls_action', 'site' ), false );
 
 
 
-				$this->_chat_plugin_settings['blocked_urls']['widget'] = wpmudev_chat_check_is_blocked_urls( $this->get_option( 'blocked_urls', 'widget' ),
+				$this->_chat_plugin_settings['blocked_urls']['widget'] = n3rdpress_chat_check_is_blocked_urls( $this->get_option( 'blocked_urls', 'widget' ),
 
 					$this->get_option( 'blocked_urls_action', 'widget' ), true );
 
@@ -1418,7 +1418,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 				if ( $this->get_option( 'load_jscss_all', 'global' ) == "enabled" ) {
 
-					$this->_chat_plugin_settings['blocked_urls']['front'] = wpmudev_chat_check_is_blocked_urls( $this->get_option( 'blocked_front_urls', 'global' ),
+					$this->_chat_plugin_settings['blocked_urls']['front'] = n3rdpress_chat_check_is_blocked_urls( $this->get_option( 'blocked_front_urls', 'global' ),
 
 						$this->get_option( 'blocked_front_urls_action', 'global' ), false );
 
@@ -1436,7 +1436,7 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 			if ( $this->_chat_plugin_settings['network_active'] == true ) {
 
-				$this->_chat_options['network-site'] = get_site_option( 'wpmudev-chat-network-site', array() );
+				$this->_chat_options['network-site'] = get_site_option( 'n3rdpress-chat-network-site', array() );
 
 				$this->_chat_options['network-site'] = wp_parse_args( $this->_chat_options['network-site'], $this->_chat_options_defaults['network-site'] );
 
@@ -1698,11 +1698,11 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 				'session_type'                             => 'page',
 
-				'session_status'                           => defined( 'WPMUDEV_CHAT_PAGE_SESSION_STATUS' ) ? WPMUDEV_CHAT_PAGE_SESSION_STATUS : '',
+				'session_status'                           => defined( 'N3RDPRESS_CHAT_PAGE_SESSION_STATUS' ) ? N3RDPRESS_CHAT_PAGE_SESSION_STATUS : '',
 
-				'blocked_ip_addresses_active'              => defined( 'WPMUDEV_CHAT_PAGE_BLOCKED_IP_ADDRESSES_ACTIVE' ) ? WPMUDEV_CHAT_PAGE_BLOCKED_IP_ADDRESSES_ACTIVE : 'enabled',
+				'blocked_ip_addresses_active'              => defined( 'N3RDPRESS_CHAT_PAGE_BLOCKED_IP_ADDRESSES_ACTIVE' ) ? N3RDPRESS_CHAT_PAGE_BLOCKED_IP_ADDRESSES_ACTIVE : 'enabled',
 
-				'blocked_words_active'                     => defined( 'WPMUDEV_CHAT_PAGE_BLOCKED_WORDS_ACTIVE' ) ? WPMUDEV_CHAT_PAGE_BLOCKED_WORDS_ACTIVE : 'disabled',
+				'blocked_words_active'                     => defined( 'N3RDPRESS_CHAT_PAGE_BLOCKED_WORDS_ACTIVE' ) ? N3RDPRESS_CHAT_PAGE_BLOCKED_WORDS_ACTIVE : 'disabled',
 
 				'session_status_message'                   => __( 'The Moderator has closed this chat session', $this->translation_domain ),
 
@@ -1712,73 +1712,73 @@ if ( ! class_exists( 'N3rdPress_Chat' ) ) {
 
 				'box_title'                                => '',
 
-				'box_width'                                => defined( 'WPMUDEV_CHAT_PAGE_BOX_WIDTH' ) ? WPMUDEV_CHAT_PAGE_BOX_WIDTH : '100%',
+				'box_width'                                => defined( 'N3RDPRESS_CHAT_PAGE_BOX_WIDTH' ) ? N3RDPRESS_CHAT_PAGE_BOX_WIDTH : '100%',
 
-				'box_width_mobile_adjust'                  => defined( 'WPMUDEV_CHAT_PAGE_BOX_WIDTH_MOBILE_ADJUST' ) ? WPMUDEV_CHAT_PAGE_BOX_WIDTH_MOBILE_ADJUST : 'window',
+				'box_width_mobile_adjust'                  => defined( 'N3RDPRESS_CHAT_PAGE_BOX_WIDTH_MOBILE_ADJUST' ) ? N3RDPRESS_CHAT_PAGE_BOX_WIDTH_MOBILE_ADJUST : 'window',
 
-				'box_height'                               => defined( 'WPMUDEV_CHAT_PAGE_BOX_HEIGHT' ) ? WPMUDEV_CHAT_PAGE_BOX_HEIGHT : '500px',
+				'box_height'                               => defined( 'N3RDPRESS_CHAT_PAGE_BOX_HEIGHT' ) ? N3RDPRESS_CHAT_PAGE_BOX_HEIGHT : '500px',
 
-				'box_height_mobile_adjust'                 => defined( 'WPMUDEV_CHAT_PAGE_BOX_HEIGHT_MOBILE_ADJUST' ) ? WPMUDEV_CHAT_PAGE_BOX_HEIGHT_MOBILE_ADJUST : 'full',
+				'box_height_mobile_adjust'                 => defined( 'N3RDPRESS_CHAT_PAGE_BOX_HEIGHT_MOBILE_ADJUST' ) ? N3RDPRESS_CHAT_PAGE_BOX_HEIGHT_MOBILE_ADJUST : 'full',
 
 				'box_class'                                => '',
 
-				'box_sound'                                => defined( 'WPMUDEV_CHAT_PAGE_BOX_SOUND' ) ? WPMUDEV_CHAT_PAGE_BOX_SOUND : 'enabled',
+				'box_sound'                                => defined( 'N3RDPRESS_CHAT_PAGE_BOX_SOUND' ) ? N3RDPRESS_CHAT_PAGE_BOX_SOUND : 'enabled',
 
-				'box_popout'                               => defined( 'WPMUDEV_CHAT_PAGE_BOX_POPOUT' ) ? WPMUDEV_CHAT_PAGE_BOX_POPOUT : 'enabled',
+				'box_popout'                               => defined( 'N3RDPRESS_CHAT_PAGE_BOX_POPOUT' ) ? N3RDPRESS_CHAT_PAGE_BOX_POPOUT : 'enabled',
 
-				'box_moderator_footer'                     => defined( 'WPMUDEV_CHAT_PAGE_BOX_MODERATOR_FOOTER' ) ? WPMUDEV_CHAT_PAGE_BOX_MODERATOR_FOOTER : 'enabled',
+				'box_moderator_footer'                     => defined( 'N3RDPRESS_CHAT_PAGE_BOX_MODERATOR_FOOTER' ) ? N3RDPRESS_CHAT_PAGE_BOX_MODERATOR_FOOTER : 'enabled',
 
-				'box_input_position'                       => defined( 'WPMUDEV_CHAT_PAGE_BOX_INPUT_POSITION' ) ? WPMUDEV_CHAT_PAGE_BOX_INPUT_POSITION : 'bottom',
+				'box_input_position'                       => defined( 'N3RDPRESS_CHAT_PAGE_BOX_INPUT_POSITION' ) ? N3RDPRESS_CHAT_PAGE_BOX_INPUT_POSITION : 'bottom',
 
-				'box_send_button_enable'                   => defined( 'WPMUDEV_CHAT_PAGE_BOX_SEND_BUTTON_ENABLE' ) ? WPMUDEV_CHAT_PAGE_BOX_SEND_BUTTON_ENABLE : 'disabled',
+				'box_send_button_enable'                   => defined( 'N3RDPRESS_CHAT_PAGE_BOX_SEND_BUTTON_ENABLE' ) ? N3RDPRESS_CHAT_PAGE_BOX_SEND_BUTTON_ENABLE : 'disabled',
 
-				'box_send_button_position'                 => defined( 'WPMUDEV_CHAT_PAGE_BOX_SEND_BUTTON_POSITION' ) ? WPMUDEV_CHAT_PAGE_BOX_SEND_BUTTON_POSITION : 'right',
+				'box_send_button_position'                 => defined( 'N3RDPRESS_CHAT_PAGE_BOX_SEND_BUTTON_POSITION' ) ? N3RDPRESS_CHAT_PAGE_BOX_SEND_BUTTON_POSITION : 'right',
 
-				'box_send_button_label'                    => defined( 'WPMUDEV_CHAT_PAGE_BOX_SEND_BUTTON_LABEL' ) ? WPMUDEV_CHAT_PAGE_BOX_SEND_BUTTON_LABEL : 'send',
+				'box_send_button_label'                    => defined( 'N3RDPRESS_CHAT_PAGE_BOX_SEND_BUTTON_LABEL' ) ? N3RDPRESS_CHAT_PAGE_BOX_SEND_BUTTON_LABEL : 'send',
 
-				'box_font_family'                          => defined( 'WPMUDEV_CHAT_PAGE_BOX_FONT_FAMILY' ) ? WPMUDEV_CHAT_PAGE_BOX_FONT_FAMILY : '',
+				'box_font_family'                          => defined( 'N3RDPRESS_CHAT_PAGE_BOX_FONT_FAMILY' ) ? N3RDPRESS_CHAT_PAGE_BOX_FONT_FAMILY : '',
 
-				'box_font_size'                            => defined( 'WPMUDEV_CHAT_PAGE_BOX_FONT_SIZE' ) ? WPMUDEV_CHAT_PAGE_BOX_FONT_SIZE : '',
+				'box_font_size'                            => defined( 'N3RDPRESS_CHAT_PAGE_BOX_FONT_SIZE' ) ? N3RDPRESS_CHAT_PAGE_BOX_FONT_SIZE : '',
 
-				'box_text_color'                           => defined( 'WPMUDEV_CHAT_PAGE_BOX_TEXT_COLOR' ) ? WPMUDEV_CHAT_PAGE_BOX_TEXT_COLOR : '#000000',
+				'box_text_color'                           => defined( 'N3RDPRESS_CHAT_PAGE_BOX_TEXT_COLOR' ) ? N3RDPRESS_CHAT_PAGE_BOX_TEXT_COLOR : '#000000',
 
-				'box_background_color'                     => defined( 'WPMUDEV_CHAT_PAGE_BOX_BACKGROUND_COLOR' ) ? WPMUDEV_CHAT_PAGE_BOX_BACKGROUND_COLOR : '#CCCCCC',
+				'box_background_color'                     => defined( 'N3RDPRESS_CHAT_PAGE_BOX_BACKGROUND_COLOR' ) ? N3RDPRESS_CHAT_PAGE_BOX_BACKGROUND_COLOR : '#CCCCCC',
 
-				'box_border_color'                         => defined( 'WPMUDEV_CHAT_PAGE_BOX_BORDER_COLOR' ) ? WPMUDEV_CHAT_PAGE_BOX_BORDER_COLOR : '#CCCCCC',
+				'box_border_color'                         => defined( 'N3RDPRESS_CHAT_PAGE_BOX_BORDER_COLOR' ) ? N3RDPRESS_CHAT_PAGE_BOX_BORDER_COLOR : '#CCCCCC',
 
-				'box_border_width'                         => defined( 'WPMUDEV_CHAT_PAGE_BOX_BORDER_WIDTH' ) ? WPMUDEV_CHAT_PAGE_BOX_BORDER_WIDTH : '1px',
+				'box_border_width'                         => defined( 'N3RDPRESS_CHAT_PAGE_BOX_BORDER_WIDTH' ) ? N3RDPRESS_CHAT_PAGE_BOX_BORDER_WIDTH : '1px',
 
 				//'box_padding'							=>	'3px',
 
-				'box_emoticons'                            => defined( 'WPMUDEV_CHAT_PAGE_BOX_EMOTICONS' ) ? WPMUDEV_CHAT_PAGE_BOX_EMOTICONS : 'disabled',
+				'box_emoticons'                            => defined( 'N3RDPRESS_CHAT_PAGE_BOX_EMOTICONS' ) ? N3RDPRESS_CHAT_PAGE_BOX_EMOTICONS : 'disabled',
 
 				//'buttonbar'							=> 	'disabled',
 
-				'row_name_avatar'                          => defined( 'WPMUDEV_CHAT_PAGE_ROW_NAME_AVATAR' ) ? WPMUDEV_CHAT_PAGE_ROW_NAME_AVATAR : 'avatar',
+				'row_name_avatar'                          => defined( 'N3RDPRESS_CHAT_PAGE_ROW_NAME_AVATAR' ) ? N3RDPRESS_CHAT_PAGE_ROW_NAME_AVATAR : 'avatar',
 
-				'row_avatar_width'                         => defined( 'WPMUDEV_CHAT_PAGE_ROW_AVATAR_WIDTH' ) ? WPMUDEV_CHAT_PAGE_ROW_AVATAR_WIDTH : '40px',
+				'row_avatar_width'                         => defined( 'N3RDPRESS_CHAT_PAGE_ROW_AVATAR_WIDTH' ) ? N3RDPRESS_CHAT_PAGE_ROW_AVATAR_WIDTH : '40px',
 
-				'row_date'                                 => defined( 'WPMUDEV_CHAT_PAGE_ROW_DATE' ) ? WPMUDEV_CHAT_PAGE_ROW_DATE : 'disabled',
+				'row_date'                                 => defined( 'N3RDPRESS_CHAT_PAGE_ROW_DATE' ) ? N3RDPRESS_CHAT_PAGE_ROW_DATE : 'disabled',
 
-				'row_date_format'                          => defined( 'WPMUDEV_CHAT_PAGE_ROW_DATE_FORMAT' ) ? WPMUDEV_CHAT_PAGE_ROW_DATE_FORMAT : get_option( 'date_format' ),
+				'row_date_format'                          => defined( 'N3RDPRESS_CHAT_PAGE_ROW_DATE_FORMAT' ) ? N3RDPRESS_CHAT_PAGE_ROW_DATE_FORMAT : get_option( 'date_format' ),
 
-				'row_time'                                 => defined( 'WPMUDEV_CHAT_PAGE_ROW_TIME' ) ? WPMUDEV_CHAT_PAGE_ROW_TIME : 'disabled',
+				'row_time'                                 => defined( 'N3RDPRESS_CHAT_PAGE_ROW_TIME' ) ? N3RDPRESS_CHAT_PAGE_ROW_TIME : 'disabled',
 
-				'row_time_format'                          => defined( 'WPMUDEV_CHAT_PAGE_ROW_TIME_FORMAT' ) ? WPMUDEV_CHAT_PAGE_ROW_TIME_FORMAT : get_option( 'time_format' ),
+				'row_time_format'                          => defined( 'N3RDPRESS_CHAT_PAGE_ROW_TIME_FORMAT' ) ? N3RDPRESS_CHAT_PAGE_ROW_TIME_FORMAT : get_option( 'time_format' ),
 
-				'row_area_background_color'                => defined( 'WPMUDEV_CHAT_PAGE_ROW_AREA_BACKGROUND_COLOR' ) ? WPMUDEV_CHAT_PAGE_ROW_AREA_BACKGROUND_COLOR : '#F9F9F9',
+				'row_area_background_color'                => defined( 'N3RDPRESS_CHAT_PAGE_ROW_AREA_BACKGROUND_COLOR' ) ? N3RDPRESS_CHAT_PAGE_ROW_AREA_BACKGROUND_COLOR : '#F9F9F9',
 
-				'row_background_color'                     => defined( 'WPMUDEV_CHAT_PAGE_ROW_BACKGROUND_COLOR' ) ? WPMUDEV_CHAT_PAGE_ROW_BACKGROUND_COLOR : '#FFFFFF',
+				'row_background_color'                     => defined( 'N3RDPRESS_CHAT_PAGE_ROW_BACKGROUND_COLOR' ) ? N3RDPRESS_CHAT_PAGE_ROW_BACKGROUND_COLOR : '#FFFFFF',
 
-				'row_border_color'                         => defined( 'WPMUDEV_CHAT_PAGE_ROW_BORDER_COLOR' ) ? WPMUDEV_CHAT_PAGE_ROW_BORDER_COLOR : '#CCCCCC',
+				'row_border_color'                         => defined( 'N3RDPRESS_CHAT_PAGE_ROW_BORDER_COLOR' ) ? N3RDPRESS_CHAT_PAGE_ROW_BORDER_COLOR : '#CCCCCC',
 
-				'row_border_width'                         => defined( 'WPMUDEV_CHAT_PAGE_ROW_BORDER_WIDTH' ) ? WPMUDEV_CHAT_PAGE_ROW_BORDER_WIDTH : '1px',
+				'row_border_width'                         => defined( 'N3RDPRESS_CHAT_PAGE_ROW_BORDER_WIDTH' ) ? N3RDPRESS_CHAT_PAGE_ROW_BORDER_WIDTH : '1px',
 
-				'row_spacing'                              => defined( 'WPMUDEV_CHAT_PAGE_ROW_SPACING' ) ? WPMUDEV_CHAT_PAGE_ROW_SPACING : '3px',
+				'row_spacing'                              => defined( 'N3RDPRESS_CHAT_PAGE_ROW_SPACING' ) ? N3RDPRESS_CHAT_PAGE_ROW_SPACING : '3px',
 
-				'row_message_input_font_size'              => defined( 'WPMUDEV_CHAT_PAGE_ROW_MESSAGE_INPUT_FONT_SIZE' ) ? WPMUDEV_CHAT_PAGE_ROW_MESSAGE_INPUT_FONT_SIZE : '',
+				'row_message_input_font_size'              => defined( 'N3RDPRESS_CHAT_PAGE_ROW_MESSAGE_INPUT_FONT_SIZE' ) ? N3RDPRESS_CHAT_PAGE_ROW_MESSAGE_INPUT_FONT_SIZE : '',
 
-				'row_message_input_font_family'            => defined( 'WPMUDEV_CHAT_PAGE_ROW_MESSAGE_INPUT_FONT_FAMILY' ) ? WPMUDEV_CHAT_PAGE_ROW_MESSAGE_INPUT_FONT_FAMILY : '',
+				'row_message_input_font_family'            => defined( 'N3RDPRESS_CHAT_PAGE_ROW_MESSAGE_INPUT_FONT_FAMILY' ) ? N3RDPRESS_CHAT_PAGE_ROW_MESSAGE_INPUT_FONT_FAMILY : '',
 
 				'row_message_input_height'                 => defined( 'WPMUDEV_CHAT_PAGE_ROW_MESSAGE_INPUT_HEIGHT' ) ? WPMUDEV_CHAT_PAGE_ROW_MESSAGE_INPUT_HEIGHT : '45px',
 
